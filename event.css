@@ -11,6 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    text-align: justify; /* Justify text globally */
 }
 
 /* Header Styles */
@@ -18,12 +19,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F5F5F5; /* Blue color */
+    background-color: #F5F5F5; /* Light gray color */
     padding: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     z-index: 1000;
+    position: relative; /* Ensure header is positioned correctly */
 }
 
 header.sticky {
@@ -60,7 +62,7 @@ header nav ul li a:hover {
 }
 
 header nav ul li a.register-btn {
-    background-color: #43e22b; /* Purple color */
+    background-color: #43e22b; /* Green color */
     padding: 8px 20px;
     border-radius: 5px;
     text-align: center;
@@ -77,6 +79,10 @@ header nav ul li a.register-btn:hover {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* Ensure it's above other elements */
 }
 
 /* Home Section */
@@ -135,6 +141,7 @@ header nav ul li a.register-btn:hover {
     border-radius: 8px;
     margin: 20px 0;
     max-width: 800px;
+    text-align: justify; /* Justify text */
 }
 
 .home-content .cultural-fest-text p {
@@ -144,7 +151,7 @@ header nav ul li a.register-btn:hover {
 
 .home-content .registration-deadline {
     font-size: 1.5rem;
-    color: #efefef; /* Tomato color for Registration Deadline */
+    color: #efefef; /* Light gray color for Registration Deadline */
 }
 
 .home-content .registration-deadline span {
@@ -169,6 +176,7 @@ header nav ul li a.register-btn:hover {
     background-color: #228B22; /* Forest green color */
     transform: scale(1.1);
 }
+
 /* Events Section */
 .events-section {
     padding: 100px 20px 50px;
