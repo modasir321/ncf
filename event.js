@@ -24,3 +24,9 @@ function showPopup() {
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+
+// Toggle Menu Functionality
+function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active");
+}

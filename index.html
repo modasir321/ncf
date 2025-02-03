@@ -14,17 +14,20 @@
             <img src="images/logo3.png" alt="NUST Cultural Fest Logo" />
         </div>
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#past-events">Past Events</a></li>
                 <li><a href="#contact">Contact Us</a></li>
                 <li><a href="https://forms.gle/YF38yGVDEixYj8R16" class="register-btn" target="_blank">Register Now</a></li>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
             </ul>
         </nav>
     </header>
 
+    <!-- Rest of the code remains the same -->
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="home-content">
@@ -42,7 +45,6 @@
         </div>
     </section>
 
-    <!-- Rest of the code remains the same -->
     <!-- Events Section -->
     <section id="events" class="events-section">
         <h2>Our Events</h2>
