@@ -164,22 +164,24 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.home-content ul li a.register-btn {
-    background-color: #1c1770; /* Dark blue background */
-    color: white; /* White text */
-    padding: 8px 20px;
+.register-btn {
+    display: inline-block;
+    background-color: darkblue; /* Initial Dark Blue Background */
+    color: white; /* White Text */
+    padding: 12px 20px;
+    font-size: 16px;
     border-radius: 5px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 2px solid #1c1770; /* Dark blue border */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.home-content ul li a.register-btn:hover {
-    background-color: #74b9ff; /* Light blue background on hover */
-    color: white; /* White text on hover */
-    border-color: #74b9ff; /* Light blue border on hover */
-    transform: scale(1.1);
+/* Hover Effect */
+.register-btn:hover {
+    background-color: navy; /* Slightly Darker Blue */
+    transform: scale(1.05); /* Slight Zoom Effect */
 }
+
 
 /* Events Section */
 .events-section {
